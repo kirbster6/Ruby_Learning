@@ -1,7 +1,10 @@
-character_name = "John"
-character_age = "35"
-puts ("There once was a man named " + character_name)
-puts ("he was " + character_age + " years old.")
-character_name = "Tom"
-puts ("He really liked the name " + character_name)
-puts ("but didn't like being " + character_age + ".")
+puts "Enter a color:"
+color = gets.chomp()
+puts "Enter a plural noun:"
+plural_noun = gets.chomp()
+puts "Enter a celebrity:"
+celebrity = gets.chomp()
+
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+print ("I love " + celebrity)
