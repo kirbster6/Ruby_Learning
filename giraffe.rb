@@ -159,13 +159,62 @@
 #   lucky_nums["dog"] # TypeError
 # rescue
 #   puts "TypeError"
-lucky_nums = [4, 8, 15, 16, 23, 42]
+# lucky_nums = [4, 8, 15, 16, 23, 42]
 
-begin
-  lucky_nums['dog'] # TypeError
-  num = 10 / 0
-rescue TypeError => e
-  puts e
-rescue ZeroDivisionError
-  puts 'Division by zero error'
-end
+# begin
+#   lucky_nums['dog'] # TypeError
+#   num = 10 / 0
+# rescue TypeError => e
+#   puts e
+# rescue ZeroDivisionError
+#   puts 'Division by zero error'
+# end
+
+# class Book
+#     attr_accessor :title, :author, :pages
+#     def initialize(title, author, pages)
+#        @title = title
+#        @author = author
+#        @pages = pages 
+#     end
+
+#     def printBook
+#         puts @title + "\n" + @author + "\n" + @pages.to_s + "\n"
+#     end
+# end
+
+# book1 = Book.new('Harry Potter', 'JK Rowling', 400)
+# book1.printBook
+
+# class Chef
+#     def make_chicken
+#         puts "The chef makes chicken"
+#     end
+
+#     def make_salad
+#         puts "The chef makes chicken"
+#     end
+
+#     def make_special_dish
+#         puts "The chef makes bbq ribs"
+#     end
+# end
+
+# class ItalianChef < Chef
+#     def make_special_dish
+#         puts "The chef makes eggplant parm"
+#     end
+
+#     def make_pasta
+#         puts "The chef makes pasta"
+#     end
+# end
+# chef = Chef.new
+# chef.make_special_dish
+
+# italian_chef = ItalianChef.new
+# italian_chef.make_special_dish
+
+require_relative 'tools.rb'
+include Tools
+Tools.sayhi("Kirby")
